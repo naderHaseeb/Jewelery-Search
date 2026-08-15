@@ -12,10 +12,10 @@ from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
 from tensorflow.keras.utils import img_to_array
 
 
-ZIP_PATH = "archive (4).zip"
+ZIP_PATH = "data/archive (4).zip"
 EXTRACT_PATH = "data"
 
-if not os.path.exists("data/Jewellery_Data"):
+if not os.path.exists("data/archive (4).zip"):
     with zipfile.ZipFile(ZIP_PATH, "r") as zip_ref:
         zip_ref.extractall(EXTRACT_PATH)
 
